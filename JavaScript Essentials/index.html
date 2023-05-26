@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Basics</title>
+    <!-- En JavaScript Basico, el orden de ejecucion dependerá de la posicion del Script. El primer Script se ejecutara primero, despues el segundo ... -->
+    <!-- <script src="basics.js"></script> -->
+    <!-- Si deseamos ejecutar un funcion desde la consola de comandos, el script contenedor de la funcion debe estar al final del todo -->
+    <!-- <script src="functions.js"></script> -->
+    <!-- <script src="operadores.js"></script> -->
+
+    <!-- Si el Script se coloca al principio, primero ejecutará el Script y despues cargara la ventana -->
+  </head>
+  <body>
+    <p id="pClasseA">Hola buenas, soy un parrafo</p>
+    <h1>Javascript Basics</h1>
+    <h2>Hola, soy un subtittle</h2>
+    <div class="clase"><p>Parrafo dentro de un div</p></div>
+    <script src="document2.js"></script>
+    <div class="container">
+      <p id="parrafo">Soy un parrafo con id dentro de un contenedor</p>
+      <p class="parrafo_clase">Esto es un parrafo con clase</p>
+      <p class="parrafo_clase">Esto es otro parrafo con clase</p>
+      <p class="pClass" data-content="1234">
+        Parrafo con valor<span>Hello</span>
+      </p>
+      <p data-content="7890">Parrafo con valor sin Span, ni clase ni Id</p>
+
+      <p id="pClasse" data-content="1234">
+        Parrafo con valor e Id <span>Hello</span>
+      </p>
+
+      <h1>Documento para el QuerySelector<span> Buenas Tardes</span></h1>
+      <!-- Si lo ejecutamos al finalizar la carga, este podra comprobar los elemetos -->
+      <script src="document.js"></script>
+    </div>
+
+    <div id="style">
+      <h1 id="header">Titulo de la caja</h1>
+      <p id="parrafo_">Elemento tipo parrafo</p>
+    </div>
+    <script src="estilos.js"></script>
+  </body>
+</html>
