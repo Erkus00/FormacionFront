@@ -1,0 +1,35 @@
+
+@media screen and (max-width:800px){
+    body {
+        font-family: monospace;
+        background-color: burlywood;
+        padding: 10px 10px 10px 10px;
+}
+}
+@media screen and (min-width:800px){
+    body {
+        font-family: monospace;
+        background-color: lightgrey;
+        padding: 10px 300px 10px 300px;
+}
+}
+
+
+
+
+.underline{
+    color: aqua;
+}
+
+.italic{
+color: blue;
+}
+
+.bolded{
+color: rgb(2, 254, 153);
+}
+
+a{
+text-decoration: none;
+color: black;
+}

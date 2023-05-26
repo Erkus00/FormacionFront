@@ -1,0 +1,7 @@
+!db
+db/*
+!db/databaseMovies-example.json
+!db/databaseUsers-example.json
+build
+.env
+.env.local

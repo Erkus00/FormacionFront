@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+.App{
+  padding:10px;
+}
+
+body {
+  color: #4b4b9e;
+  margin: 0;
+  background-color: #e7e5ff;
+  font-family: 'Heebo', sans-serif;
+}
+
+hr{
+  opacity: .3;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.cont-a {
+  margin: 0 auto 20px auto;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="range"]{
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-family: 'Heebo', sans-serif;
+}
+
+.ui{
+  padding: 40px;
+}
+
+@media screen and (max-width: 850px) {
+  .cont-a{
+    max-width: 500px;
+    max-height: 500px;
+  }
+  .App :nth-child(5){
+    max-width: 500px;
+    max-height: 300px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .cont-a{
+    border-radius: 10px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .App :nth-child(5){
+    max-width: 300px;
+    max-height: 200px;
+  }
+}

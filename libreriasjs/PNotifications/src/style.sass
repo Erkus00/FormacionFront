@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap')
+
+body
+  margin: 0
+  padding: 0
+  background-color: #111111
+  background-image: url('./assets/topography.webp')
+  font-family: 'Raleway', sans-serif
+
+.loader
+  width: 30px
+  height: 30px
+  border: 5px solid #e4e4e4
+  border-bottom-color: #0077ff
+  border-radius: 50%
+  display: inline-block
+  box-sizing: border-box
+  animation: rotation 1s linear infinite
+  &.hidden
+    display: none
+  @keyframes rotation
+    0%
+      transform: rotate(0deg)
+
+    100%
+      transform: rotate(360deg)
+
+.main-container
+  max-width: 1000px
+  margin: 10px auto
+  border-radius: 5px
+  display: flex
+  flex-direction: column
+  padding: 40px 5% 40px 5%
+  .header
+    color: #ffffff
+    border-radius: 5px
+    padding: 40px
+    background-color: #232323
+    background-image: url('./assets/double-bubble-dark.webp')
+    margin: 0 0 20px 0
+    h1
+      margin: 0
+  .request-permission-container
+    text-align: right
+    margin: 0 0 20px 0
+    display: flex
+    justify-content: flex-end
+    &.hidden
+      display: none
+    button.request-permission-btn
+      cursor: pointer
+      padding: 10px 30px
+      background-color: #0c62a9
+      font-weight: 700
+      font-family: 'Raleway', sans-serif
+      border: none
+      border-radius: 3px
+      box-shadow: 0 3px 4px rgba(0,0,0,.2)
+      color: #fff
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 1.2rem
+      .label-btn
+        &.hidden
+          display: none
+  #token-container
+    margin-bottom: 20px
+    padding: 10px
+    border-radius: 5px
+    background-color: #bababa
+    text-align: center
+    display: none
+    &.active
+      display: block
+    &.ready
+      color: #087e00
+      background-color: #a5ff81
+      word-break: break-all
+    &.error
+      color: #7e0000
+      background-color: #ff8181
+  .blog-post
+    display: block
+    background-color: #fff
+    color: #000
+    text-decoration: none
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2)
+    color: #fff
+    position: relative
+    padding: 20% 20px 20px 20px
+    overflow: hidden
+    border-radius: 4px
+    margin-bottom: 20px
+    transition: transform .1s ease, opacity .5s ease
+    transform: scale(1)
+    opacity: 1
+    &.appear
+      opacity: 0
+    &::after
+      content: ''
+      position: absolute
+      z-index: 1
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      transform: translateY(30%)
+      transition: transform .2s ease
+      background: rgb(0,0,0)
+      background: -moz-linear-gradient(0deg, rgba(0,0,0,0.8) 50%, rgba(0,2,9,0.5) 70%, rgba(3,28,135,0) 100%)
+      background: -webkit-linear-gradient(0deg, rgba(0,0,0,0.8) 50%, rgba(0,2,9,0.5) 70%, rgba(3,28,135,0) 100%)
+      background: linear-gradient(0deg, rgba(0,0,0,0.8) 50%, rgba(0,2,9,0.5) 70%, rgba(3,28,135,0) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#031c87",GradientType=1)
+    &:hover
+      transform: scale(1.02)
+      &::after
+        transform: translateY(0%)
+      .post-content
+        transform: translate(0%)
+        .content-excerpt
+          opacity: 1
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      &.bottom
+        object-position: center bottom
+      &.top
+        object-position: center top
+    .post-content
+      position: relative
+      z-index: 2
+      transform: translateY(50%)
+      transition: transform .2s ease .2s
+      .title-wrapper
+        border-left: solid 2px #fff
+        padding: 0 0 0 20px
+        h2
+          margin: 0 0 8px 0
+          font-weight: 700
+        h3
+          margin: 0
+          font-weight: 300
+      .content-excerpt
+        opacity: 0
+        transition: opacity .2s ease .3s
+        max-width: 60%
+  .footer
+    font-size: .8rem
+    text-align: right

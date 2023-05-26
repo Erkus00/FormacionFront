@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Shepherd</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="sidebar-container">
+        <ul class="unstyled menu">
+          <li>
+            <a href="#"><img src="icons/home.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icons/dashboard.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icons/user.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="icons/document.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-container">
+        <div class="header-container">
+          <h1>Dashboard</h1>
+          <div class="user-badge">
+            <div class="profile-img">
+              <img src="images/user.jpg" alt="" />
+            </div>
+            <span>Jane Doe</span>
+          </div>
+        </div>
+        <div id="content" class="content-container">
+          <div class="row">
+            <div class="card bg-gradient take-screenshot-card">
+              <h2>Tour virtual</h2>
+              <div class="form-wrapper">
+                <button class="btn with-icon tertiary tour-btn">
+                  <img src="icons/flag.svg" alt="" />
+                  <span>Realizar tour</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card card-circle-projects">
+              <h2>Proyectos</h2>
+              <div class="text-center">
+                <img
+                  src="images/circle.svg"
+                  alt=""
+                  class="img-chart chart-circle"
+                />
+              </div>
+              <div class="text-center">
+                <ul class="unstyled list-inline list-dots">
+                  <li class="text-main">Completado</li>
+                  <li class="dot-secondary text-secondary">En progreso</li>
+                </ul>
+              </div>
+            </div>
+            <div class="card bg-gradient">
+              <h2>Meeting de producto</h2>
+              <h3>02:00 - 03:00 PM</h3>
+              <div class="users-meeting">
+                <span>
+                  <img src="images/user_2.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="images/user_3.jpg" alt="" />
+                </span>
+                <span>
+                  <img src="images/user.jpg" alt="" />
+                </span>
+              </div>
+              <a href="#" class="btn tertiary"> Acceder </a>
+            </div>
+            <div class="card card-documents">
+              <h2>Documentos</h2>
+              <ul class="list-dots unstyled">
+                <li>meeting-morning.pdf</li>
+                <li>kickoff_december.pdf</li>
+                <li>dossier-trimestre.doc</li>
+              </ul>
+              <a href="#" class="btn">Ver todo</a>
+            </div>
+          </div>
+          <div class="row">
+            <div id="table" class="card">
+              <h2>Tabla de contenido</h2>
+              <div class="table-wrapper">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Empresa</th>
+                      <th>Contacto</th>
+                      <th>País</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Alfreds Futterkiste</td>
+                      <td>Maria Anders</td>
+                      <td>Germany</td>
+                    </tr>
+                    <tr>
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                      <td>Mexico</td>
+                    </tr>
+                    <tr>
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                      <td>Austria</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                <a href="#" class="btn">Exportar CSV</a>
+              </p>
+            </div>
+            <div id="chart" class="card card-linecharts">
+              <h2>Evolución</h2>
+              <div>
+                <img src="images/linecharts.svg" alt="" class="img-chart" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-container">Fake Dashboard 2022 | libreriasJs</div>
+      </div>
+    </div>
+  </body>
+</html>
