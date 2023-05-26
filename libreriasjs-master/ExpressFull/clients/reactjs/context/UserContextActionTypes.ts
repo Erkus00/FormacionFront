@@ -1,3 +1,0 @@
-export const SET_LOGIN_TOKEN = "SET_LOGIN_TOKEN";
-export const SET_ANOMIMOUS_TOKEN = "SET_ANOMIMOUS_TOKEN";
-export const LOG_OUT = "LOG_OUT";

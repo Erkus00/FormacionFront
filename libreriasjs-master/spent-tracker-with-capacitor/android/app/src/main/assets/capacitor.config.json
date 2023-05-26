@@ -1,6 +1,0 @@
-{
-	"appId": "com.libreriasjs.spendtracker",
-	"appName": "spend-tracker",
-	"webDir": "build",
-	"bundledWebRuntime": false
-}
