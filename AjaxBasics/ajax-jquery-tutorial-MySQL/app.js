@@ -58,7 +58,11 @@ app.get("/todos", function (req, res) {
 		if (error) {
 			console.log(error);
 		} else {
-			res.render("index", { todos: resuts });
+			if (req.xhr) {
+				res.json(resuts);
+			} else {
+				res.render("index", { todos: resuts });
+			}
 		}
 	});
 });
