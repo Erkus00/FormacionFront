@@ -76,7 +76,11 @@ app.post("/todos", function (req, res) {
 		if (error) {
 			res.render("new");
 		} else {
-			res.redirect("/todos");
+			if (req.xhr) {
+				res.json(results);
+			} else {
+				res.redirect("/todos");
+			}
 		}
 	});
 });
@@ -91,7 +95,8 @@ app.get("/todos/:id/edit", function (req, res) {
 	});
 });
 
-app.post("/todos/:id", function (req, res) {
+// Update by Id
+app.put("/todos/:id", function (req, res) {
 	conexion.query(
 		update_by_Id,
 		[{ text: req.body.todo.text }, req.params.id],
@@ -99,13 +104,17 @@ app.post("/todos/:id", function (req, res) {
 			if (error) {
 				console.log(error);
 			} else {
-				res.redirect("/");
+				if (req.xhr) {
+					res.json(results);
+				} else {
+					res.redirect("/");
+				}
 			}
 		}
 	);
 });
 
-app.get("/todos/delete/:id", function (req, res) {
+app.delete("/todos/:id", function (req, res) {
 	conexion.query(delete_by_id, [req.params.id], (error, results) => {
 		if (error) {
 			console.log(error);

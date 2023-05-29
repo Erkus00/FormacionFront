@@ -1,3 +1,0 @@
-$.get("/todos", (data) => {
-	debugger;
-});
