@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>JQuery Bascics</title>
+		<!-- Codigo si uno mismo Hostea JQuery -->
+		<!-- <script src="jquery-3.6.4.min.js"></script> -->
+
+		<!-- En caso de no desear Hostearlo (Descargarlo en Local) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="contenedor"><p>Buenos dias por la mañana</p></div>
+		<div class="contenedor"><p>Buenos dias por la mañana</p></div>
+
+		<ul>
+			<li>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Reprehenderit, nihil! Aliquid, adipisci omnis. Repellendus
+				perspiciatis totam dolore, in beatae pariatur quidem tempore
+				harum reprehenderit aliquam placeat ipsam nesciunt numquam!
+				Harum!
+			</li>
+			<li>
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
+				atque optio, excepturi magnam non, voluptatum commodi asperiores
+				voluptatibus suscipit necessitatibus consequatur sit et numquam
+				ut architecto nihil? Ipsam, cum eligendi.
+			</li>
+			<li>
+				<div class="internal_div" style="border: 1px solid black">
+					<p id="internal_p">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Possimus laboriosam nostrum repudiandae molestias
+						delectus. Nesciunt recusandae fuga veritatis dolorem
+						similique, quisquam magni quibusdam deleniti impedit
+						doloribus culpa eaque esse voluptates?
+					</p>
+					<ol>
+						<li>BUenazzzzzzzzzzzz</li>
+					</ol>
+				</div>
+			</li>
+			<li>
+				<ul>
+					<li>
+						Lorem <a href="">Lurem</a> ipsum dolor sit amet
+						consectetur adipisicing elit. Consequuntur a
+						voluptatibus cumque ipsam, quod reiciendis ab officiis
+						eius! Pariatur accusamus quasi ad sit, praesentium
+						quidem molestiae odit velit aut repellat.
+					</li>
+					<li>
+						Lorem ipsum, dolor sit amet consectetur adipisicing
+						elit. Libero ab illum soluta sit fugiat eum in velit,
+						distinctio dolor exercitationem dignissimos. Accusamus
+						sint, natus repellendus ducimus temporibus nesciunt
+						alias officiis?
+					</li>
+					<li>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Rem nesciunt earum iste quibusdam quo corrupti, ab
+						praesentium veritatis maxime voluptates vitae magnam
+						optio similique aliquid placeat perferendis dolore
+						ducimus alias?
+					</li>
+				</ul>
+			</li>
+			<li>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+				Laudantium dolores nemo, facere consectetur inventore unde autem
+				commodi minus doloremque qui quibusdam repudiandae aliquid cum
+				ex hic recusandae debitis quasi amet!
+			</li>
+			<li class="li1">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+				cumque porro atque necessitatibus labore odit dignissimos
+				sapiente deleniti sint in praesentium maiores unde doloremque
+				repellat quae dolore, ullam obcaecati iusto?
+			</li>
+			<li class="li2">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+				molestias, itaque atque officia ut et natus facere beatae harum
+				iure laudantium explicabo labore exercitationem odio odit fugiat
+				corrupti facilis! Error.
+			</li>
+		</ul>
+		<hr />
+		<div class="form-container">
+			<form action="#" method="post" id="myForm">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						placeholder="Enter your name"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="surName">Email:</label>
+					<input
+						type="text"
+						id="surName"
+						name="surName"
+						placeholder="Enter your NAME"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="aliasName">Email:</label>
+					<input
+						type="text"
+						id="aliasName"
+						name="aliasName"
+						placeholder="Enter your ALIAS NAME"
+						required
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="Enter your email"
+					/>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Message:</label>
+					<textarea
+						id="message"
+						name="message"
+						placeholder="Enter your message"
+						rows="4"
+						required
+					></textarea>
+				</div>
+
+				<div class="form-group">
+					<label for="gender">Gender:</label>
+					<select id="gender" name="gender" required>
+						<option value="">Select</option>
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<input
+						type="checkbox"
+						id="subscribe"
+						name="subscribe"
+						value="yes"
+					/>
+					<label for="subscribe">Subscribe to newsletter</label>
+				</div>
+
+				<div class="form-group">
+					<input
+						type="radio"
+						id="payment-credit"
+						name="payment"
+						value="credit"
+						checked
+					/>
+					<label for="payment-credit">Credit card</label>
+					<br />
+					<input
+						type="radio"
+						id="payment-paypal"
+						name="payment"
+						value="paypal"
+					/>
+					<label for="payment-paypal">PayPal</label>
+				</div>
+
+				<div class="form-group">
+					<input type="submit" value="Submit" />
+				</div>
+			</form>
+		</div>
+		<hr />
+		<div id="animals" class="creature">
+			Animals
+			<div class="creature">
+				Mammals
+				<div class="creature">Dogs</div>
+				<div class="creature" id="cat">Cat</div>
+				<div class="terrain">Forest</div>
+				<div class="terrain">Prairie</div>
+			</div>
+			<div class="creature">
+				Reptiles
+				<div class="creature">Snake</div>
+				<div class="creature">Lizard</div>
+				<div class="creature">Cocodrile</div>
+				<div class="terrain">Jungle</div>
+			</div>
+		</div>
+	</body>
+	<script src="./script.js"></script>
+	<!-- <script>
+		$(document).ready(() => {
+			alert("JQuery está funcionando correctamente");
+		});
+	</script> -->
+</html>

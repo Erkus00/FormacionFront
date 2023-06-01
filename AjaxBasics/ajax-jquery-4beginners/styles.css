@@ -1,0 +1,76 @@
+.highlighted {
+    color: whitesmoke;
+    background-color: blue;
+    margin: 2em
+}
+.highlight {
+    color: whitesmoke;
+    background-color: yellow;
+}
+
+.pretty {
+    color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 42);
+}
+
+.blue {
+    color: rgb(60, 0, 255);
+    background-color: rgb(0, 187, 255);
+}
+
+.it {
+    font-style: italic;
+}
+
+.small {
+    font-size: xx-small;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin: auto auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: #45a049;
+}
