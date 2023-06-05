@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<title>Eventos</title>
+	</head>
+	<body>
+		<!-- <div id="example">
+			<button class="switch">Click me</button>
+		</div> -->
+		<div id="example">
+			<div class="container">
+				<select id="place">
+					<option
+						value="santiago"
+						data-price="100"
+						data-localitation="Spain"
+					>
+						Santiago
+					</option>
+					<option
+						value="madrid"
+						data-price="180"
+						data-localitation="Spain"
+					>
+						Madrid
+					</option>
+					<option
+						value="yakarta"
+						data-price="300"
+						data-localitation="Asia"
+					>
+						Yakarta
+					</option>
+					<option
+						value="Istambul"
+						data-price="200"
+						data-localitation="Japan"
+					>
+						Tokyo
+					</option>
+				</select>
+				<button>Pick</button>
+			</div>
+			<div class="container">
+				<div class="form-group">
+					<label>Introduzca su nombre</label>
+					<input type="text" />
+				</div>
+			</div>
+		</div>
+
+		<div id="clear" class="centered">
+			<button>Limpiar</button>
+		</div>
+
+		<div id="result" class="container"></div>
+		<script src="./events.js"></script>
+	</body>
+</html>

@@ -1,76 +1,93 @@
-.highlighted {
-    color: whitesmoke;
-    background-color: blue;
-    margin: 2em
-}
-.highlight {
-    color: whitesmoke;
-    background-color: yellow;
+body{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.pretty {
-    color: rgb(255, 0, 0);
-    background-color: rgb(0, 255, 42);
+.container > .form-group > label{
+     text-align: center;
+     margin-bottom: 1em;
+     display: grid;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: 2em;
+    padding: 2em;
+    height: auto;
+    border: 1px solid black;
+    width: 500px;
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+select{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 50px;
+    text-align: center;
+    width: 75%;
+}
+
+button{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 50px;
+    width: 100px;
+}
+
+.centered {
+display: flex;
+justify-content: center;
+text-align: center;
 }
 
 .blue {
-    color: rgb(60, 0, 255);
-    background-color: rgb(0, 187, 255);
+background-color: blue !important;
+border: 2px solid black;
 }
 
-.it {
-    font-style: italic;
+br{
+    padding: 10em;
 }
 
-.small {
-    font-size: xx-small;
+.item{
+    width: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+
 }
 
-.form-container {
-    width: 400px;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    margin: auto auto;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 16px;
-}
-
-.form-group input[type="submit"] {
-    background-color: #4CAF50;
+.remove{
+    background-color: red;
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+    font-weight: bold;
+    padding: 1em;
 }
 
-.form-group input[type="submit"]:hover {
-    background-color: #45a049;
+.item > p{
+    text-align: center;
 }
+
+.container-grid{
+    display: grid;
+    justify-content: space-around;
+    margin: 2em;
+    padding: 2em;
+    height: auto;
+    border: 1px solid black;
+    width: 500px;
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    width: 350px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
