@@ -15,7 +15,7 @@ Analiza               <-    Responde
 
 -   `npm i -g npm` -> Permite actualizar el npm
 -   `npm init` -> Inicia un nuevo proyecto de Node Js
--   `npm init -y` -> Iniciaun nuevo Proyecto y permite dar 'yes' a todas las
+-   `npm init -y` -> Inicia un nuevo Proyecto y permite dar 'yes' a todas las
     opciones
 -   `npm i <nombre_libreria>` == `npm install <nombre_libreria>`
 -   `npm audit` -> Permite revicar las vulnerabilidades
