@@ -42,7 +42,6 @@ app.post("/products", (req, res) => {
 			name,
 		});
 	}
-
 	res.json("Creado con Exito");
 });
 
@@ -55,7 +54,6 @@ app.put("/products/:id", (req, res) => {
 			prod.name = new_name;
 		}
 	});
-
 	res.json("Actualizado");
 });
 

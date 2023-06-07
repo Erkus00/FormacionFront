@@ -17,6 +17,9 @@
 					Tutorial
 				</a>
 			</button>
+			<button>
+				<a href="./views/DOM.html"> Second Page </a>
+			</button>
 		</div>
 		<div id="form" class="container">
 			<form id="productForm" action="">
@@ -25,7 +28,7 @@
 				<button type="submit" class="fill">Create Product</button>
 			</form>
 		</div>
-		<div class="container small">
+		<div class="bg-transparent container">
 			<button id="getProducts" class="fill" type="button">
 				GET Products
 			</button>
@@ -40,6 +43,21 @@
 			</thead>
 			<tbody></tbody>
 		</table>
+		<div class="fill grid-container">
+			<div class="bg-transparent container">
+				<button id="loadBtn" class="bg-classic">
+					CLICK ME, LOAD RESULTS.html
+				</button>
+			</div>
+			<div
+				id="status"
+				class="bg-white w-20 centered small-border-normal"
+			></div>
+			<div
+				id="response"
+				class="bg-white square centered small-border"
+			></div>
+		</div>
 	</body>
 	<script src="./javascript/app.js"></script>
 </html>

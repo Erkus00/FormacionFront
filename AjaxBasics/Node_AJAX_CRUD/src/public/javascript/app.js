@@ -69,4 +69,32 @@ $(document).ready(() => {
 			},
 		});
 	});
+
+	$("#loadBtn").on("click", function () {
+		$.ajax("./views/results.html", {
+			beforeSend: function () {
+				$("#status")
+					.html("<p>Loading...</p>")
+					.addClass("grid-container bg-orange");
+			},
+		})
+			// Se ejecuta si no hay errores
+			.done(function (response) {
+				$("#response").html(response);
+				$("#status")
+					.html("<p>Completed</p>")
+					.addClass("grid-container bg-green");
+			})
+			.fail(function (request, errorType, errorMessage) {
+				alert(errorMessage);
+				console.log(errorType);
+				$("#status")
+					.html(`<p>${errorMessage}</p>`)
+					.addClass("grid-container bg-red");
+			})
+			// Se ejecuta SIEMPRE
+			.always(function () {
+				console.log("Proceso terminado");
+			});
+	});
 });
