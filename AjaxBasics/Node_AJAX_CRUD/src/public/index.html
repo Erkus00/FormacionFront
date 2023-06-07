@@ -10,13 +10,36 @@
 	</head>
 	<body>
 		<div id="example" class="container">
-			<a
-				href="https://www.youtube.com/watch?v=sqt4wK4yU1w&ab_channel=FaztCode"
-			>
-				Tutorial
-			</a>
+			<button>
+				<a
+					href="https://www.youtube.com/watch?v=sqt4wK4yU1w&ab_channel=FaztCode"
+				>
+					Tutorial
+				</a>
+			</button>
 		</div>
-		<div id="result" class="container"></div>
+		<div id="form" class="container">
+			<form id="productForm" action="">
+				<input type="text" id="newProduct" />
+				<br />
+				<button type="submit" class="fill">Create Product</button>
+			</form>
+		</div>
+		<div class="container small">
+			<button id="getProducts" class="fill" type="button">
+				GET Products
+			</button>
+		</div>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>NAME</th>
+					<th>ACTIONS</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
 	</body>
 	<script src="./javascript/app.js"></script>
 </html>
